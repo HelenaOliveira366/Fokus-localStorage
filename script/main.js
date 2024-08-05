@@ -9,7 +9,7 @@ const buttons = document.querySelectorAll('.app__card-button');
 const startPauseBtn = document.querySelector('#start-pause');
 const tempoNaTela = document.querySelector('#timer');
 
-let tempoDecorridoSegundos = 10; //se não iniciá-la aqui, dá erro no 1° temporizador
+let tempoDecorridoSegundos = 1500; //se não iniciá-la aqui, dá erro no 1° temporizador
 let intervalo = null;
 
 //BOTÃO CHECK DE LIGAR E DESLIGAR A MÚSICA
@@ -37,7 +37,7 @@ musicCheckbox.addEventListener('change', () => {
 
 //AJUSTAR PARA O MODO FOCO COM BASE NO CLICK DO BOTÃO
 focoBtn.addEventListener('click', () => {
-    tempoDecorridoSegundos = 10;
+    tempoDecorridoSegundos = 1500;
     //ALTERAR O VALOR DO HTML (aplicando o estilos de [data-contexto="foco"] do CSS) ATRAVÉS DO ATRIBUTO setAttribute(), QUE RECEBE DOIS VALORES, O PRIMEIRO É O ELEMENTO QUE SE QUER ALTERAR E O SEGUNDO É O VALOR A SER APLICADO
     //html.setAttribute('data-contexto', 'foco'); - 1° VERSÃO
     //banner.setAttribute('src', './imagens/foco.png'); - 1° VERSÃO
@@ -68,7 +68,7 @@ descansoLongoBtn.addEventListener('click', () => {
 //Após a primeira contagem, o relǵio ira atualizar para a contagem inicial de cada contexto, bem como ajustar o botão de play/plause quando finalizar a contagem
 function reiniciarRelogio(){
     if(alterarContexto == 'foco'){
-        tempoDecorridoSegundos = 10;
+        tempoDecorridoSegundos = 1500;
         mostrarTempo();
         iniciarPausar();
     }
