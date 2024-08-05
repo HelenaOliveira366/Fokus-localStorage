@@ -1,4 +1,4 @@
-# Fokus-localStorage
+# Fokus com gerenciador de tarefas
 Acesse: https://helenaoliveira366.github.io/Fokus-localStorage/
 
 Projeto construído no cruso JavaScript: explorando a manipulação de elementos e da localStorage da Alura
